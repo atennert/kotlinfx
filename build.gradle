@@ -1,0 +1,34 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.3.21'
+}
+
+group 'de.atennert'
+version '0.0.1'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation files("${System.properties['java.home']}/../lib/ant-javafx.jar")
+
+    testImplementation 'io.mockk:mockk:1.9'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3+'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3+'
+
+    testImplementation 'org.testfx:testfx-junit5:4.0.15-alpha'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
