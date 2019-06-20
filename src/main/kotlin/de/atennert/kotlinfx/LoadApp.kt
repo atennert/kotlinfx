@@ -10,9 +10,9 @@ import javafx.stage.Stage
  */
 fun loadApp(stage: Stage?) {
     val fxmlLoader = FXMLLoader(ClassLoader.getSystemResource("my-view.fxml"))
-    val main = fxmlLoader.load<Pane>()
+    val pane = fxmlLoader.load<Pane>() // this loads VBox, but VBox is an extension of Pane
 
-    val scene = Scene(main)
+    val scene = Scene(pane)
 
     stage?.title = "MyApp"
     stage?.scene = scene
