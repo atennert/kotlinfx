@@ -32,7 +32,7 @@ class UITest : ApplicationTest() {
 
     @Test
     fun `check that button exists`()
-            = FxAssert.verifyThat("#myButton") { obj: Button? -> obj != null} // it doesn't work :-(
+            = FxAssert.verifyThat<Button>("#myButton") {it != null}
 
     @Test
     fun `check initial label text`()
