@@ -19,7 +19,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     implementation files("${System.properties['java.home']}/../lib/ant-javafx.jar")
 
-    testImplementation 'io.mockk:mockk:1.9'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3+'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3+'
 

@@ -21,13 +21,11 @@ class UITest : ApplicationTest() {
 
     @BeforeEach
     fun setup() {
-        super.internalBefore()
     }
 
     @AfterEach
     fun tearDown() {
         FxToolkit.hideStage()
-        super.internalAfter()
     }
 
     @Test
