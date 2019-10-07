@@ -6,7 +6,7 @@ plugins {
 group 'de.atennert'
 version '0.0.1'
 
-sourceCompatibility = 12
+sourceCompatibility = 11
 
 repositories {
     mavenCentral()
@@ -17,7 +17,7 @@ test {
 }
 
 javafx {
-    version = "12.0.2"
+    version = "11.0.2"
     modules = ['javafx.fxml', 'javafx.controls']
 }
 
@@ -32,8 +32,8 @@ dependencies {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = "12"
+    kotlinOptions.jvmTarget = "11"
 }
 compileTestKotlin {
-    kotlinOptions.jvmTarget = "12"
+    kotlinOptions.jvmTarget = "11"
 }
