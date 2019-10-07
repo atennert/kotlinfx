@@ -15,7 +15,7 @@ import org.testfx.matcher.control.LabeledMatchers
  */
 class UITest : ApplicationTest() {
     override fun start(stage: Stage?) {
-        loadApp(stage)
+        MyApplication.loadStage(stage)
         stage?.toFront()
     }
 
