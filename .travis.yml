@@ -4,6 +4,9 @@ dist: bionic
 
 jdk: openjdk11
 
+services:
+  - xvfb
+
 notifications:
   email:
     on_success: never
