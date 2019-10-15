@@ -13,7 +13,7 @@ import org.testfx.matcher.control.LabeledMatchers
 /**
  * Test for MyView and MyController.
  */
-class UITest : ApplicationTest() {
+class MyApplicationTest : ApplicationTest() {
     override fun start(stage: Stage?) {
         MyApplication.loadStage(stage)
         stage?.toFront()
